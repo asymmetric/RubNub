@@ -1,0 +1,2 @@
+class KernelController < ApplicationController
+end

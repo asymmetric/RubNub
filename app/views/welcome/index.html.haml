@@ -1,6 +1,10 @@
 :markdown
   Welcome to RubNub!
 
+= form_tag kernel_parse_path do
+  = text_field_tag 'query'
+  = submit_tag 'Submit'
+
 %p
   = link_to 'Add a command', new_command_path
   = link_to 'List all commands', commands_path
