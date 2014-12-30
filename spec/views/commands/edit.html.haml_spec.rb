@@ -6,7 +6,6 @@ RSpec.describe "commands/edit", :type => :view do
       :name => "MyString",
       :url => "MyString",
       :description => "MyText",
-      :uses => ""
     ))
   end
 
@@ -20,8 +19,6 @@ RSpec.describe "commands/edit", :type => :view do
       assert_select "input#command_url[name=?]", "command[url]"
 
       assert_select "textarea#command_description[name=?]", "command[description]"
-
-      assert_select "input#command_uses[name=?]", "command[uses]"
     end
   end
 end

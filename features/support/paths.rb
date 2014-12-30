@@ -19,6 +19,11 @@ module NavigationHelpers
     send "#{actual}_#{resource}_path"
   end
 
+  def homepage_submit(query)
+    fill_in "query", with: query
+
+    click_button "Submit"
+  end
 end
 
 World(NavigationHelpers)
